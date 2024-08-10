@@ -1,15 +1,14 @@
-n=int(input("enter the lenght of the array"))
+arrsize=int(input("enter the lenght of the array"))
 arr=[]
-for  i in range(n):
-    n1=int(input("enter value"))
-    arr.append(n1)
+for  i in range(arrsize):
+    val=int(input("enter value"))
+    arr.append(val)
             
-l=[]
+evenindex_val=[]
 sum=0
-for i in range(n):
+for i in range(arrsize):
     if i%2==0:
-        l.append(arr[i])
-print(l)
-for i in range(len(l)):
-    sum+=l[i]
+        evenindex_val.append(arr[i])
+for i in range(len(evenindex_val)):
+    sum+=evenindex_val[i]
 print(sum)
